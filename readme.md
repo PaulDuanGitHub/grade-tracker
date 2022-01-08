@@ -1,0 +1,1 @@
+This is a simple grade tracker based on Electron. It allows you to save and load your infomation as you want.
