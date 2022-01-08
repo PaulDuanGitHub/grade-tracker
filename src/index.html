@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <title>Grade Tracker</title>
+</head>
+<link rel="stylesheet" type="text/css" href="webstyle.css">
+<body>
+  <h1>Grade Tracker</h1>
+  Welcome to Grade Tracker, you can use this tool to help you calc your grades and keep tracking them. “卷死他们!”
+  <br>
+  <button id="save">Save as a file</button>
+  <button id="load">Load a file</button>
+  <hr>
+  <button id="addCourse">Add Course</button>
+  <button id="removeCourse">Remove Course</button>
+  <!-- Main part of the application -->
+  <div id = "main">
+    <div id="course1" class = "course">
+      <br>
+      <!-- Every course will have edit and apply buttons -->
+      <button id='edit1' class='editButton'>Edit</button>
+      <button id='apply1' class='applyButton'>Apply</button>
+      <table border="5" cellspacing="1" cellpadding = "3">
+        <!-- Tbody for assignments -->
+        <tbody id='data1'>
+          <!-- Buttons for adding and removing assignments -->
+          <td><button id="add1" class='addButton'>Add Column</button></td>
+          <td><button id="remove1" class='removeButton'>Remove Column</button></td>
+          <tr>
+            <td colspan="2">Course Name</td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="text" id="coursename1" class="coursename" size="10"></td>
+          </tr>
+          <tr class='title'>
+            <td><input type='text' class='name' id='name11' size="1"> Mark</td>
+            <td><input type='text' class='mark' id='mark11' size="1"></input>/<input type='text' class='fullmark' id='fullmark11' size="1"></input></td>
+          </tr>
+          <tr>
+            <td><span class="w_name" id='w_name11'></span> Wgt.</td>
+            <td><input type='text' class='weight' id='weight11' size="2" ></input>%</td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>Bonus Mark</td>
+            <td><input type='text' class='b_mark' id='b_mark1' size="1"></input>%</td>
+          </tr>
+          <tr>
+            <td colspan="2"><button id="calc1" class="calcButton" disabled>Calculate!</button></td>
+          </tr>
+          <tr>
+            <td colspan="2">Max Grade:</td>
+          </tr>
+          <tr>
+            <td colspan="2" id="res1" class = 'res'>100%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <br>
+  <script src="calc.js"></script>
+  <script src="lockName.js"></script>
+  <script src="addColumn.js"></script>
+  <script src="removeColumn.js"></script>
+  <script src='removeCourse.js'></script>
+  <script src='editColumn.js'></script>
+  <script src='applyColumn.js'></script>
+  <script src="addCourse.js"></script>
+  <script src="save.js"></script>
+  <script src="load.js"></script>
+</body>
+
+</html>
