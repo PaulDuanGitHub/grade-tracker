@@ -1,7 +1,7 @@
 # Grade Tracker
 
 This is a simple grade tracker based on Electron. It allows you to save and load your infomation as you want.
-![PIC.png](https://s2.loli.net/2022/01/09/4HR3YW5wl6fMn8K.png)
+![PIC.png](https://i.ibb.co/f18cXGv/PIC.png)
 
 ## Background
 
